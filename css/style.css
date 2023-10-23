@@ -1,0 +1,244 @@
+/* global */
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary-color: #2d2df7;
+    --secondary-color: #353557;
+    --background-color: #babae6;
+    --border-color: #00009d;
+    --card-color: #d0d0ee;
+    --list-separator-color: #c5b6e4;
+
+    --card-border-style: dotted;
+}
+
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+h2
+{
+    margin: 10px;
+}
+
+.card
+{
+    border: 1px var(--card-border-style) var(--border-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--card-color);
+}
+
+/* header */
+
+.main-header
+{
+    background-color: var(--primary-color);
+    height: 70px;
+}
+
+.main-header .main-header-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main-header .main-header-name
+{
+    color: #ffffff;
+    text-shadow: var(--secondary-color) 0 0 5px;
+}
+
+.main-header .main-header-links
+{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.main-header .main-header-links a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-header .main-header-links ul
+{
+    list-style: none;
+}
+
+/* Skills Section */
+
+.skills-section .card ul
+{
+    list-style: none;
+}
+
+.skills-section .card li
+{
+    display: flex;
+
+}
+
+.skills-section .skills-type
+{
+    font-weight: bold;
+
+
+}
+
+.skills-section .skills-type::after
+{
+    content: '\003a\00a0';
+}
+
+/* Experience and Education Sections */
+
+.experience-section .card header,
+.education-section .card header
+{
+    display: flex;
+    gap: 10px;
+}
+
+.card .card-company
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card .card-icons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.card .card-location
+{
+    margin-left: 10px;
+}
+
+.card .card-dates
+{
+    margin-left: auto;
+}
+
+.card .card-title
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card .card-list
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 1.4em;
+    border-top: 1px solid var(--list-separator-color);
+}
+
+/* Footer */
+
+.main-footer
+{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Media Queries (for smaller screen width) */
+
+@media (max-width: 600px) {
+    body
+    {
+        text-align: center;
+    }
+
+    .main-header .main-header-flex
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .main-header .main-header-name
+    {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    h2
+    {
+        text-align: center;
+    }
+
+    .skills-section .card li
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-section .skills-type::after
+    {
+        content: '';
+    }
+
+    .experience-section .card header,
+    .education-section .card header
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card .card-icons
+    {
+        margin: 0 auto;
+    }
+
+    .card .card-location
+{
+    margin-left: 0;
+}
+
+    .card .card-dates
+    {
+        margin-left: 0;
+    }
+
+    .card .card-list ul
+    {
+        list-style-type: none;
+    }
+
+    .card .card-list li:not(:first-child)
+    {
+        border-top: 1px solid var(--list-separator-color);
+        margin-top: 2px;
+        padding-top: 2px;
+    }
+}
