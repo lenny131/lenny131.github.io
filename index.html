@@ -2,162 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leonard M. Cohen - This is my homepage with my resume.">
+    <meta name="description" content="Leonard M. Cohen - This is my homepage.">
     <title>Leonard M. Cohen - Home</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script src="https://kit.fontawesome.com/ee3dc35c08.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container main-header-flex">
-            <h1 class="main-header-name">Leonard M. Cohen</h1>
-            <nav class="main-header-links">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/leonard-cohen-52739429" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                    </li>
-                </ul>
+    <div class="container">
+        <header>
+            <h1>Leonard M. Cohen</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/leonard-cohen-52739429" class="nav-link" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/lenny131/" class="nav-link" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
             </nav>
-        </div>
-    </header>
-    <section class="skills-section">
-        <div class="container">
-            <h2 class="section-header">Skills</h2>
-            <article class="card">
-                <ul>
-                    <li>
-                        <p class="skills-type">Languages</p>
-                        <p class="skills-details">C#, VB.NET, T-SQL, HTML, JavaScript, CSS, VB6.</p>
-                    </li>
-                    <li>
-                        <p class="skills-type">Frameworks</p>
-                        <p class="skills-details">.NET, ASP.NET, WinForms, Microsoft Excel (macros).</p>
-                    </li>
-                    <li>
-                        <p class="skills-type">Development Tools</p>
-                        <p class="skills-details">Visual Studio, SSIS.</p>
-                    </li>
-                    <li>
-                        <p class="skills-type">Database Platforms</p>
-                        <p class="skills-details">SQL Server.</p>
-                    </li>
-                    <li>
-                        <p class="skills-type">Source Control</p>
-                        <p class="skills-details">VSS, Subversion, Git.</p>
-                    </li>
-                    <li>
-                        <p class="skills-type">OS</p>
-                        <p class="skills-details">Windows.</p>
-                    </li>
-                </ul>
-            </article>
-        </div>
-    </section>
-    <section class="experience-section">
-        <div class="container">
-            <h2 class="section-header">Experience</h2>
-            <article class="card">
-                <header>
-                    <p class="card-company">State Street</p>
-                    <div class="card-icons">
-                        <a href="https://www.statestreet.com/" target="_blank"><i class="fa-solid fa-link fa-lg icon-margin"></i></a>
-                        <a href="https://www.linkedin.com/company/state-street/" target="_blank"><i class="fa-brands fa-linkedin fa-lg icon-margin"></i></a>
-                    </div>
-                    <p class="card-location">Boston/Quincy, MA</p>
-                    <p class="card-dates">September 2015 - September 2023</p>
-                </header>
-                <p class="card-title">Application Developer</p>
-                <p class="card-description">
-                    State Street is a large financial services company headquartered in Boston.
+        </header>
+        <main>
+            <section class="main-content">
+                <p>
+                    Hi! I'm a software developer with 15+ years of professional experience.
                 </p>
-                <div class="card-list">
-                    <ul>
-                        <li>Built new Excel macros and updated existing macros using VBA, VB.NET, and C#, with VSTO for .NET integration.</li>
-                        <li>Assisted users and developers throughout the business with issues running macros and using our macro library website.</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="card">
-                <header>
-                    <p class="card-company">DebtX</p>
-                    <div class="card-icons">
-                        <a href="https://debtx.com/" target="_blank"><i class="fa-solid fa-link fa-lg icon-margin"></i></a>
-                        <a href="https://www.linkedin.com/company/the-debt-exchange/" target="_blank"><i class="fa-brands fa-linkedin fa-lg icon-margin"></i></a>
-                    </div>
-                    <p class="card-location">Boston, MA</p>
-                    <p class="card-dates">August 2011 - June 2014</p>
-                </header>
-                <p class="card-title">Junior Software Engineer</p>
-                <p class="card-description">
-                    DebtX (The Debt Exchange) provides loan management services to financial institutions. Services include loan sales and portfolio valuation.
+                <p>
+                    Feel free to check out the links to my LinkedIn and GitHub pages.
+                    I also have a profile on <a href="https://www.frontendmentor.io/profile/lenny131">Frontend Mentor</a>.
                 </p>
-                <div class="card-list">
-                    <ul>
-                        <li>
-                            Worked primarily on DXMark, a Windows Forms application written in C# with an SQL Server database, 
-                            used by our team of financial analysts to calculate prices for large portfolios of loans.
-                        </li>
-                        <li>Created and maintained import scripts using SSIS to import loans and application data for DXMark.</li>
-                        <li>Maintained a VB6 application used by the analysts to create pricing models.</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="card">
-                <header>
-                    <p class="card-company">MedNet Medical Solutions</p>
-                    <div class="card-icons">
-                        <a href="http://www.mednetmedical.com/" target="_blank"><i class="fa-solid fa-link fa-lg icon-margin"></i></a>
-                        <a href="https://www.linkedin.com/company/mednetmedicalsolutions/" target="_blank"><i class="fa-brands fa-linkedin fa-lg icon-margin"></i></a>
-                    </div>
-                    <p class="card-location">Webster, MA</p>
-                    <p class="card-dates">June 2007 - August 2011</p>
-                </header>
-                <p class="card-title">Software Engineer</p>
-                <dpiv class="card-description">
-                    MedNet Medical Solutions (formerly MedNet System) is a vendor of an electronic medical records (EMR) ASP.NET 
-                    web application used by healthcare practices to maintain patient information.
+                <p>
+                    <a href="https://leonardcohen.com">If you're looking for the Canadian singer-songwriter, please click here.</a>
                 </p>
-                <div class="card-list">
-                    <ul>
-                        <li>
-                            Implemented new functionality and enhanced existing functionality in the EMR to achieve certification 
-                            by the Certification Commission for Healthcare Information Technology (CCHIT).
-                        </li>
-                        <li>
-                            Designed and implemented a disease management system, which recommends a patient specific care plan 
-                            based on demographic and diagnostic information.
-                        </li>
-                        <li>Collaborated on multiple interoperability projects, including electronic prescriptions with SureScripts 
-                            and Lab/Radiology interfaces with multiple labs using HL7.
-                        </li>
-                        <li>Created application builds and migrated them from the development to staging and production environments.</li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="education-section">
-        <div class="container">
-            <h2 class="section-header">Education</h2>
-            <article class="card">
-                <header>
-                    <p class="card-company">Worcester Polytechnic Institute</p>
-                    <div class="card-icons">
-                        <a href="https://www.wpi.edu/" target="_blank"><i class="fa-solid fa-link fa-lg icon-margin"></i></a>
-                        <a href="https://www.linkedin.com/school/worcester-polytechnic-institute/" target="_blank"><i class="fa-brands fa-linkedin fa-lg icon-margin"></i></a>
-                    </div>
-                    <p class="card-location">Worcester, MA</p>
-                </header>
-                <p class="card-title">Bachelor of Science in Computer Science</p>
-            </article>
-        </div>
-    </section>
-    <footer class="main-footer">
-        <p class="container">&copy; 2023 Leonard M. Cohen</p>
-    </footer>
+            </section>
+        </main>
+        <footer>
+            <small>&copy; 2025 Leonard M. Cohen</small>
+        </footer>
+    </div>
 </body>
-</html>

@@ -1,0 +1,77 @@
+@use "fonts";
+@use "colors";
+@use "spacing";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    @include fonts.text-normal;
+    color: colors.$primary-dark;
+    background-color: colors.$primary-light;
+    /*color: colors.$primary-light;
+    background-color: colors.$primary-dark;*/
+    height: 100%;
+    text-align: center;
+    padding: spacing.$small;
+}
+
+h1 {
+    @include fonts.text-page-heading;
+}
+
+a {
+    color: colors.$secondary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav-link {
+    @include fonts.text-nav-link;
+}
+
+small {
+    @include fonts.text-small;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%
+}
+
+main {
+    flex-grow: 1;
+    padding: spacing.$small;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.$small;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: spacing.$normal;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: colors.$primary-light;
+        background-color: colors.$primary-dark;
+    }
+}

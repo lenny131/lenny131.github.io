@@ -1,0 +1,19 @@
+@use "fonts";
+@use "colors";
+@use "spacing";
+@use "layout";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.$small;
+    margin-block: auto;
+    max-inline-size: 50ch;
+}

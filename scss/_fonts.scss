@@ -1,0 +1,68 @@
+// fonts
+
+@mixin _tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin _tomorrow-bold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+@mixin _tomorrow-extrabold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  
+@mixin _tomorrow-regular-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin _tomorrow-bold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+@mixin _tomorrow-extrabold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+// text presets
+
+@mixin text-normal {
+    @include _tomorrow-regular();
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+@mixin text-small {
+    @include _tomorrow-regular();
+    font-size: clamp(0.75rem, 0.50rem + 1.5vw, 1rem);;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+@mixin text-page-heading {
+    @include _tomorrow-extrabold();
+    font-size: clamp(2rem, 1.75rem + 1.5vw, 4rem);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+@mixin text-nav-link {
+    @include _tomorrow-bold();
+    font-size: clamp(1.25rem, 1rem + 1.5vw, 2.5rem);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
